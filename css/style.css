@@ -1,0 +1,98 @@
+.home-page {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-page .title-text {
+  margin: 0 auto;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 484px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.options-it_btn {
+  width: 242px;
+  height: 224px;
+  background: inherit;
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.options-it_btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.modal-welcome {
+  display: none;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F4D4DB;
+}
+.modal-welcome .title-text {
+  width: 614px;
+  margin: 0 auto;
+}
+
+.isclosed {
+  display: none;
+}
+
+.welcome-pic {
+  position: relative;
+  z-index: 999;
+  width: 970px;
+  height: 446px;
+  margin: 70px auto 60px;
+  border-radius: 56px;
+  background-image: url("/img/welcome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -65px;
+}
+
+.heart-btn {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: inherit;
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.heart-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.title-text {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 70px;
+  color: #FFFFFF;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

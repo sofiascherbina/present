@@ -1,0 +1,40 @@
+.modal-welcome{
+     display: none;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:$soft-bg;
+    & .title-text{
+        width: 614px;
+        margin: 0 auto ;
+    }
+}
+.isclosed{
+    display: none;
+}
+.welcome-pic{
+     position: relative;
+     z-index: 999;
+    width: 970px;
+    height: 446px;
+    margin: 70px auto 60px;
+    border-radius: 56px;
+    @include bg-img($img:url('/img/welcome.jpg'));
+    background-position: 0px -65px;
+}
+.heart-btn{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    border: none;
+    transition: transform 0.3s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
