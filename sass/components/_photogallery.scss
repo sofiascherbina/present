@@ -1,13 +1,51 @@
 .gallery-page{
-    width: 100%;
-    height: 100%;
     @include bg-img($img:url('/img/gallery-bg.jfif'));
+    padding-bottom: 73px;
     & .title{
     width: 900px;
-    height: 200px;
-    margin: auto;
-    padding-top: 25px;
+    margin: 0 auto;
+    padding: 5px 0;
     border-radius: 50px;
     background-color:rgba($color:$dark-pink, $alpha: 0.6);
 }
+}
+.season{
+    display: flex;
+    gap: 96px;
+    padding: 0;
+    margin: 120px 0;
+    margin-bottom: 0;
+    & p {
+        @include text();
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &-li{
+        transition: transform 0.3s ease
+    }
+}
+.season-btn{
+    padding: 0;
+    border-radius: 36px;
+}
+.btn-sun{
+     @include btn($width:175px, $height:175px, $background:rgba($color:$soft-yellow, $alpha: 0.6));
+}
+.btn-snowflake{
+     @include btn($width:175px, $height:175px, $background:rgba($color:$soft-blue, $alpha: 0.6));
+}
+.btn-mushroom{
+     @include btn($width:175px, $height:175px, $background:rgba($color:$soft-red, $alpha: 0.6));
+}
+.btn-flower{
+     @include btn($width:175px, $height:175px, $background:rgba($color:$pink-bg, $alpha: 0.6));
+}
+ $icons: 'sun', 'snowflake' ,'mushroom', 'flower';
+    @each $icons-items in $icons{
+    .btn-#{$icons-items}{
+        background-image: url("/img/#{$icons-items}.svg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
 }

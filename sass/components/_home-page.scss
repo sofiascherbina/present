@@ -29,20 +29,7 @@
 .options-it_btn{
     padding: 0;
     @include btn();
-        &:hover{
-        transform: scale(1.05);
-        cursor: url('/img/pointer.svg'), auto;
-    }
 }
-//  $icons: 'camera', 'music' ,'cake';
-//     @each $icons-items in $icons{
-//     .options-#{$icons-items}{
-//         background-image: url("/img/#{$icons-items}.svg");
-//         background-size: auto;
-//         background-repeat: no-repeat;
-//         background-position: left;
-//     }
-// }
 .options-it_text{
     text-align: center;
     @include text();
@@ -54,8 +41,4 @@
     @include btn($width:300px,$height: 300px, $background: none);
     right: 150px;
     bottom: 190px;
-      &:hover{
-        transform: scale(1.05);
-        cursor: url('/img/pointer.svg'), auto;
-    }
 }

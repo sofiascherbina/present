@@ -8,7 +8,25 @@
 body{
     cursor: url('/img/cursor.svg'), auto;
 }
+button , .season-li{
+    &:hover{
+        transform: scale(1.05);
+        cursor: url('/img/pointer.svg'), auto;
+    };
+}
+.container{
+    width: 1010px;
+    margin: 0 auto;
+}
 .title-text{
     @include text($size:70px);
     text-align: center;
+}
+.come-back{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    @include btn($width:150px, $height:150px, $background: $pink-bg);
+    border-radius: 50%;
+    padding: 0;
 }
