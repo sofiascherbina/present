@@ -9,3 +9,10 @@
     background-repeat:$repeat;
     background-size: $size;
 }
+@mixin btn($width:222px, $height:200px, $background :none, $border: none, $transition: transform 0.3s ease){
+    width:$width;
+    height: $height;
+    background:  $background;
+    border:  $border;
+    transition:$transition;
+}

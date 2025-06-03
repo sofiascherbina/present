@@ -1,9 +1,12 @@
-@import './utils/vars', './utils/mixins', './components/home-page', './components/modal-welcome', './components/notification', './components/personality',
+@import './utils/vars', './utils/mixins', './components/home-page', './components/modal', './components/notification', './components/personality',
 './components/photogallery', './components/sounds';
 
 *{
     list-style-type: none;
     text-decoration: none;
+}
+body{
+    cursor: url('/img/cursor.svg'), auto;
 }
 .title-text{
     @include text($size:70px);

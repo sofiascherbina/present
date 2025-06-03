@@ -1,0 +1,13 @@
+.gallery-page{
+    width: 100%;
+    height: 100%;
+    @include bg-img($img:url('/img/gallery-bg.jfif'));
+    & .title{
+    width: 900px;
+    height: 200px;
+    margin: auto;
+    padding-top: 25px;
+    border-radius: 50px;
+    background-color:rgba($color:$dark-pink, $alpha: 0.6);
+}
+}

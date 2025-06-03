@@ -1,25 +1,61 @@
 .home-page{
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 30px 0 ;
    @include bg-img($img:url('/img/home.png'));
-    // background-position: -400px 0px;
+    background-position: 0px -40px;
     & .title-text{
         margin: 0 auto;
+    }
+    & .title{
+        width: 800px;
+        height: 260px;
+        margin: 0 auto;
+        background: linear-gradient(rgba(244, 212, 219, 0.5), rgba(244, 212, 219, 0.5)),
+            url('/img/hometitle-bg.gif') center/cover no-repeat;
+        background-position: 0px -40px;
+        border-radius: 50px;
+        padding: 50px 20px;
     }
 }
 .options{
     display: flex;
+    gap: 20px;
     padding: 0;
     width: 484px;
     flex-wrap: wrap;
+    margin: 15px 100px 0;
 }
 .options-it_btn{
-    width: 242px;
-    height: 224px;
-    background: inherit;
-    border: none;
-    transition: transform 0.3s ease;
+    padding: 0;
+    @include btn();
         &:hover{
         transform: scale(1.05);
+        cursor: url('/img/pointer.svg'), auto;
+    }
+}
+//  $icons: 'camera', 'music' ,'cake';
+//     @each $icons-items in $icons{
+//     .options-#{$icons-items}{
+//         background-image: url("/img/#{$icons-items}.svg");
+//         background-size: auto;
+//         background-repeat: no-repeat;
+//         background-position: left;
+//     }
+// }
+.options-it_text{
+    text-align: center;
+    @include text();
+    margin: 0;
+    padding: 15px 0 0;
+}
+.notification{
+    position: absolute;
+    @include btn($width:300px,$height: 300px, $background: none);
+    right: 150px;
+    bottom: 190px;
+      &:hover{
+        transform: scale(1.05);
+        cursor: url('/img/pointer.svg'), auto;
     }
 }
