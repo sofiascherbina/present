@@ -125,10 +125,6 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.is-open {
-  display: block;
-}
-
 .note {
   width: 800px;
   height: 685px;
@@ -159,7 +155,7 @@
   background-image: url("/img/gallery-bg.jfif");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 73px;
+  padding: 44px 0 149px;
 }
 .gallery-page .title {
   width: 900px;
@@ -175,8 +171,7 @@
   display: flex;
   gap: 96px;
   padding: 0;
-  margin: 120px 0;
-  margin-bottom: 0;
+  margin: 150px 0 0;
 }
 .season p {
   font-family: "Josefin Sans";
@@ -270,6 +265,124 @@
   background-position: left;
 }
 
+.gallery-slide {
+  display: none;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  position: relative;
+  -webkit-transform: translate(15%, 5%);
+          transform: translate(15%, 5%);
+  width: 1300px;
+  height: 700px;
+  padding: 55px 55px;
+  border-radius: 49px;
+}
+
+.theme-photo {
+  width: 300px;
+  height: 600px;
+  border: 10px solid;
+  border-radius: 52px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.theme-photo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.photo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 70px;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  width: 658px;
+}
+.photo-list-li {
+  width: 250px;
+  height: 250px;
+  border: 10px solid;
+  border-radius: 52px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.photo-list-li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.summer {
+  background-color: rgba(251, 246, 185, 0.7);
+}
+.summer .gallery-slide-container {
+  background-color: #FFF9AE;
+}
+.summer .gallery-slide-container .theme-photo {
+  border: 10px solid #FFF36F;
+}
+.summer .gallery-slide-container .photo-list-li {
+  border: 10px solid #FFF36F;
+}
+
+.winter {
+  background-color: rgba(191, 239, 254, 0.7);
+}
+.winter .gallery-slide-container {
+  background-color: #A3E4F2;
+}
+.winter .gallery-slide-container .theme-photo {
+  border: 10px solid #67DBFD;
+}
+.winter .gallery-slide-container .photo-list-li {
+  border: 10px solid #67DBFD;
+}
+
+.spring {
+  background-color: rgba(244, 174, 193, 0.7);
+}
+.spring .gallery-slide-container {
+  background-color: #F99CA6;
+}
+.spring .gallery-slide-container .theme-photo {
+  border: 10px solid #E47682;
+}
+.spring .gallery-slide-container .photo-list-li {
+  border: 10px solid #E47682;
+}
+
+.autumn {
+  background-color: rgba(228, 118, 130, 0.7);
+}
+.autumn .gallery-slide-container {
+  background-color: #E47682;
+}
+.autumn .gallery-slide-container .theme-photo {
+  border: 10px solid #E02D40;
+}
+.autumn .gallery-slide-container .photo-list-li {
+  border: 10px solid #E02D40;
+}
+
 * {
   list-style-type: none;
   text-decoration: none;
@@ -299,7 +412,7 @@ button:hover, .season-li:hover {
 }
 
 .come-back {
-  position: relative;
+  position: absolute;
   top: 30px;
   left: 30px;
   width: 150px;
@@ -312,4 +425,8 @@ button:hover, .season-li:hover {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   border-radius: 50%;
   padding: 0;
+}
+
+.is-open {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

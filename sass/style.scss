@@ -1,4 +1,4 @@
-@import './utils/vars', './utils/mixins', './components/home-page', './components/modal', './components/notification', './components/personality',
+@import './utils/vars', './utils/mixins', './components/home-page', './components/modal',  './components/personality',
 './components/photogallery', './components/sounds';
 
 *{
@@ -23,10 +23,13 @@ button , .season-li{
     text-align: center;
 }
 .come-back{
-    position: relative;
+    position: absolute;
     top: 30px;
     left: 30px;
     @include btn($width:150px, $height:150px, $background: $pink-bg);
     border-radius: 50%;
     padding: 0;
+}
+.is-open{
+    display: block;
 }
