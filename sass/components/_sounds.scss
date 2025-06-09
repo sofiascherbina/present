@@ -1,0 +1,81 @@
+.lyrics-page{
+    @include bg-img($img:url('/img/lyrics-bg.jfif'));
+    padding: 44px 0 127px;
+    & .title{
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color:rgba($color:$dark-pink, $alpha: 0.6);
+    &-text{
+        margin: 0;
+    }
+}
+}
+.lyrics-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin:100px auto 0;
+    width: 1290px;
+    &_li{
+        width: calc((100% - 30px)/3);
+    }
+}
+
+//animation 
+
+.audio-anim{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.megaphone{
+    position: relative;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url(/img/megaphone.svg);
+    background-size: cover;
+}
+.heart{
+    position: relative;
+    // width: 50px;
+    // height: 50px;
+    background-image: url(/img/heart.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: heartMove 1.3s infinite linear;
+} 
+.audio{
+    border: 5px solid rgba($color:$lyrics-pink, $alpha: 0.5);
+    border-radius: 50px;
+    &:focus{
+        box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+    }
+}
+
+@keyframes  heartMove {
+    0% {
+        left: -40px;
+        width: 50px;
+        height: 50px;
+    }
+    30%{
+        width: 60px;
+        height: 60px;
+    }
+    50%{
+        width: 50px;
+        height: 50px;
+    }
+    80%{
+        width: 60px;
+        height: 60px;
+    }
+    100%{
+        left: 140px;
+        width: 50px;
+        height: 50px;
+    }
+}

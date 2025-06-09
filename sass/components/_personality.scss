@@ -1,0 +1,55 @@
+.personality-page{
+    display: flex;
+    @include bg-img($img:url('/img/personality-bg.jfif'));
+    padding-top: 15px;
+}
+.pers-pic-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 885px;
+    padding: 0;
+    margin: 50px 0 50px 150px;
+    &_li{
+        height: 270px;
+        border-radius: 20px;
+        & img{
+            border-radius: inherit;
+        }
+    }
+}
+.pers-pic-position{
+    display: flex;
+    gap: 15px;
+    padding: 0px 180px;
+}
+.pers-btn{
+    position: relative;
+    @include btn($width:500px, $height:100px, $background:rgba($color:$dark-pink, $alpha: 0.7));
+    border-radius: 50px;
+    margin-bottom: 50px;
+
+    @include text();
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 15px;
+        display: block;
+        width: 95px;
+        height: 95px;
+       @include bg-img($img:url('/img/strawberry.svg'));
+
+    }
+    &:focus{
+         box-shadow: 0 0 10px rgba(255, 105, 180, 1);
+    }
+}
+.pers-btn-list{
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.chosen{
+     box-shadow: 0 0 30px  rgb(244, 3, 103);
+}
