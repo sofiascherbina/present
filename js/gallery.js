@@ -1,30 +1,45 @@
-const container = document.querySelector('.gallery-slide');
-const btnClose = document.querySelector('.paw-btn');
 const btnSun = document.querySelector('.btn-sun');
 const btnSnowflake = document.querySelector('.btn-snowflake');
 const btnMushroom = document.querySelector('.btn-mushroom');
 const btnFlower = document.querySelector('.btn-flower');
 
+ let gallery = basicLightbox.create(`<div class="gallery-slide">
+        <div class="gallery-slide-container">
+            <div class="theme-photo"></div>
+            <ul class="photo-list">
+                <li class="photo-list-li photo-cat1 photo-bouquet photo-inShelter photo-pikmi"></li>
+                <li class="photo-list-li photo-cat2 photo-lock photo-cinema photo-krasotka"></li>
+                <li class="photo-list-li photo-flowers photo-flower1 photo-boots photo-fontain"></li>
+                <li class="photo-list-li photo-kurtosh photo-flower2 photo-shopping photo-genTogether"></li>
+            </ul>
+            <button class="paw-btn">
+                <img src="/img/paw.svg" alt="paw" width="200" height="200">
+            </button>
+        </div>
+    </div>`);
+let galleryEl = gallery.element();
+let openedGallery = galleryEl.querySelector('.gallery-slide');
+const btnClose = galleryEl.querySelector('.paw-btn');
+
 btnClose.addEventListener('click', ()=>{
-    container.classList.remove('is-open');
-    container.classList.remove('summer');
-    container.classList.remove('winter');
-    container.classList.remove('spring');
-    container.classList.remove('autumn');
+    gallery.close();
+     setTimeout(() => {
+    openedGallery.classList.remove('summer', 'winter', 'spring', 'autumn');
+  }, 300);
 });
 btnSun.addEventListener('click', ()=>{
-    container.classList.add('is-open');
-    container.classList.add('summer');
+    gallery.show();
+    openedGallery.classList.add('summer');
 });
 btnSnowflake.addEventListener('click', ()=>{
-    container.classList.add('is-open');
-    container.classList.add('winter');
+    gallery.show();
+    openedGallery.classList.add('winter');
 });
 btnMushroom.addEventListener('click', ()=>{
-    container.classList.add('is-open');
-    container.classList.add('autumn');
+    gallery.show();
+    openedGallery.classList.add('autumn');
 });
 btnFlower.addEventListener('click', ()=>{
-    container.classList.add('is-open');
-    container.classList.add('spring');
+    gallery.show();
+    openedGallery.classList.add('spring');
 });

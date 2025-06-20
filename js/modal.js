@@ -12,15 +12,17 @@ closeBtn.addEventListener('click', ()=>{
     sessionStorage.setItem('hasSeenModal', 'true');
 });
 
-
-const modalNote = document.querySelector('.modal-note');
+//note
 const btnOpen = document.querySelector('.notification');
-const btnClose = document.querySelector('.paw-btn');
 
 btnOpen.addEventListener('click', ()=>{
-    modalNote.classList.add('is-open');
+    let modalNote = basicLightbox.create(`<div class="modal-note"><div class="note"><p>love u</p></div><button class="paw-btn"><img src="/img/paw.svg" alt="paw" width="200" height="200"></button></div>`)
+    modalNote.show();
+    let modalWin = modalNote.element(); 
+
+    const btnClose = modalWin.querySelector('.paw-btn');
+    btnClose.addEventListener('click', ()=>{
+        modalNote.close();
+    });
 });
 
-btnClose.addEventListener('click', ()=>{
-    modalNote.classList.remove('is-open');
-});

@@ -35,27 +35,24 @@
 //modal-note
 
 .modal-note{
-     display: none;
-    position: fixed;
-    z-index: 998;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(000, 000, 000, 0.5);
+    position: relative;
+    width: 100vw;     // повна ширина вікна
+    height: 100vh; 
+    padding-top: 50px;
 }
 .note{
     width: 800px;
     height: 685px;
-    margin: 50px auto;
+    margin: 0 auto;
     @include bg-img($img: url(/img/envelope.png));
     & p{
         text-align: center;
+        margin: 0;
     }
 }
 .paw-btn{
     position: absolute;
-    right: 20px;
+    right: 100px;
     top: 0;
     @include btn($width:200px,$height: 200px);
 }

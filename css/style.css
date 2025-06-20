@@ -115,31 +115,28 @@
 }
 
 .modal-note {
-  display: none;
-  position: fixed;
-  z-index: 998;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 50px;
 }
 
 .note {
   width: 800px;
   height: 685px;
-  margin: 50px auto;
+  margin: 0 auto;
   background-image: url(/img/envelope.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .note p {
   text-align: center;
+  margin: 0;
 }
 
 .paw-btn {
   position: absolute;
-  right: 20px;
+  right: 100px;
   top: 0;
   width: 200px;
   height: 200px;
@@ -346,13 +343,9 @@
 }
 
 .gallery-slide {
-  display: none;
-  position: fixed;
-  z-index: 998;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 .gallery-slide-container {
@@ -368,11 +361,14 @@
   padding: 55px 55px;
   border-radius: 49px;
 }
+.gallery-slide-container .paw-btn {
+  right: 50px;
+}
 
 .theme-photo {
   width: 300px;
   height: 600px;
-  border: 10px solid;
+  border: 10px solid none;
   border-radius: 52px;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -399,7 +395,7 @@
 .photo-list-li {
   width: 250px;
   height: 250px;
-  border: 10px solid;
+  border: 10px solid none;
   border-radius: 52px;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -411,9 +407,6 @@
           transform: scale(1.05);
 }
 
-.summer {
-  background-color: rgba(251, 246, 185, 0.7);
-}
 .summer .gallery-slide-container {
   background-color: #FFF9AE;
 }
@@ -448,43 +441,103 @@
   background-repeat: no-repeat;
 }
 
-.winter {
-  background-color: rgba(191, 239, 254, 0.7);
-}
 .winter .gallery-slide-container {
   background-color: #A3E4F2;
 }
 .winter .gallery-slide-container .theme-photo {
   border: 10px solid #67DBFD;
+  background-image: url("/img/cooking.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .winter .gallery-slide-container .photo-list-li {
   border: 10px solid #67DBFD;
 }
-
-.spring {
-  background-color: rgba(244, 174, 193, 0.7);
+.winter .photo-inShelter {
+  background-image: url("/img/inShelter.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
 }
+.winter .photo-cinema {
+  background-image: url("/img/cinema.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.winter .photo-boots {
+  background-image: url("/img/boots.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.winter .photo-shopping {
+  background-image: url("/img/shopping.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+
 .spring .gallery-slide-container {
   background-color: #F99CA6;
 }
 .spring .gallery-slide-container .theme-photo {
   border: 10px solid #E47682;
+  background-image: url("/img/bthCafe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .spring .gallery-slide-container .photo-list-li {
   border: 10px solid #E47682;
 }
-
-.autumn {
-  background-color: rgba(228, 118, 130, 0.7);
+.spring .photo-bouquet {
+  background-image: url("/img/bouquet.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
 }
+.spring .photo-lock {
+  background-image: url("/img/lock.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.spring .photo-flower1 {
+  background-image: url("/img/flower1.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.spring .photo-flower2 {
+  background-image: url("/img/flower2.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+
 .autumn .gallery-slide-container {
   background-color: #E47682;
 }
 .autumn .gallery-slide-container .theme-photo {
   border: 10px solid #E02D40;
+  background-image: url("/img/genshin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .autumn .gallery-slide-container .photo-list-li {
   border: 10px solid #E02D40;
+}
+.autumn .photo-pikmi {
+  background-image: url("/img/pikmi.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.autumn .photo-krasotka {
+  background-image: url("/img/krasotka.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.autumn .photo-fontain {
+  background-image: url("/img/fontain.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.autumn .photo-genTogether {
+  background-image: url("/img/genTogether.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
 }
 
 .lyrics-page {

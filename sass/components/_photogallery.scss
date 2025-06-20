@@ -7,6 +7,7 @@
     padding: 5px 0;
     border-radius: 50px;
     background-color:rgba($color:$dark-pink, $alpha: 0.6);
+
 }
 }
 .season{
@@ -54,13 +55,9 @@
 
 
 .gallery-slide{
-    display: none;
-    position: fixed;
-    z-index: 998;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 100vw;     // повна ширина вікна
+    height: 100vh;
 }
 .gallery-slide-container{
     display: flex;
@@ -71,11 +68,14 @@
     height: 700px;
     padding: 55px 55px;
     border-radius: 49px;
+    & .paw-btn{
+        right: 50px;
+    }
 }
 .theme-photo{
     width: 300px;
     height: 600px;
-    border: 10px solid ;
+    border: 10px solid none;
     border-radius: 52px;
     transition: transform 0.3s ease;
         &:hover{
@@ -91,7 +91,7 @@
     &-li{
         width:250px;
         height: 250px;
-        border: 10px solid;
+        border: 10px solid none;
         border-radius: 52px;
         transition: transform 0.3s ease;
         &:hover{
@@ -100,7 +100,6 @@
     }
 }
 .summer{
-    background-color:rgba($color:$soft-yellow, $alpha: 0.7);
     & .gallery-slide-container{
         background-color: $yellow-bg;
         & .theme-photo{
@@ -120,17 +119,16 @@
         background-image: url("/img/#{$icons-items}.png");
         background-size: 250px 250px;
         background-repeat: no-repeat;
-        // background-position: left;
     }
 }
     
 }
 .winter{
-    background-color:rgba($color:$soft-blue, $alpha: 0.7);
     & .gallery-slide-container{
         background-color: $blue-bg;
         & .theme-photo{
             border: 10px solid $dark-blue;
+            @include bg-img($img:url('/img/cooking.png'));
         }
         & .photo-list{
             &-li{
@@ -138,14 +136,22 @@
             }
         }
     }
+        $icons: 'inShelter', 'cinema' ,'boots', 'shopping';
+    @each $icons-items in $icons{
+    .photo-#{$icons-items}{
+        background-image: url("/img/#{$icons-items}.png");
+        background-size: 250px 250px;
+        background-repeat: no-repeat;
+    }
+}
     
 }
 .spring{
-    background-color:rgba($color:$lyrics-pink, $alpha: 0.7);
     & .gallery-slide-container{
         background-color: $pink-bg;
         & .theme-photo{
             border: 10px solid $dark-pink;
+             @include bg-img($img:url('/img/bthCafe.png'));
         }
         & .photo-list{
             &-li{
@@ -153,14 +159,22 @@
             }
         }
     }
+        $icons: 'bouquet', 'lock' ,'flower1', 'flower2';
+    @each $icons-items in $icons{
+    .photo-#{$icons-items}{
+        background-image: url("/img/#{$icons-items}.png");
+        background-size: 250px 250px;
+        background-repeat: no-repeat;
+    }
+}
     
 }
 .autumn{
-    background-color:rgba($color:$dark-pink, $alpha: 0.7);
     & .gallery-slide-container{
         background-color: $dark-pink;
         & .theme-photo{
             border: 10px solid $dark-red;
+            @include bg-img($img:url('/img/genshin.png'));
         }
         & .photo-list{
             &-li{
@@ -168,5 +182,13 @@
             }
         }
     }
+        $icons: 'pikmi', 'krasotka' ,'fontain', 'genTogether';
+    @each $icons-items in $icons{
+    .photo-#{$icons-items}{
+        background-image: url("/img/#{$icons-items}.png");
+        background-size: 250px 250px;
+        background-repeat: no-repeat;
+    }
+}
     
 }
