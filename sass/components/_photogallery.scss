@@ -105,6 +105,8 @@
         background-color: $yellow-bg;
         & .theme-photo{
             border:10px solid  $dark-yellow;
+            @include bg-img($img:url('/img/dandelion.jpg'));
+            background-position: left; 
         }
         & .photo-list{
             &-li{
@@ -112,6 +114,15 @@
             }
         }
     }
+    $icons: 'cat1', 'cat2' ,'flowers', 'kurtosh';
+    @each $icons-items in $icons{
+    .photo-#{$icons-items}{
+        background-image: url("/img/#{$icons-items}.png");
+        background-size: 250px 250px;
+        background-repeat: no-repeat;
+        // background-position: left;
+    }
+}
     
 }
 .winter{

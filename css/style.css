@@ -419,9 +419,33 @@
 }
 .summer .gallery-slide-container .theme-photo {
   border: 10px solid #FFF36F;
+  background-image: url("/img/dandelion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
 }
 .summer .gallery-slide-container .photo-list-li {
   border: 10px solid #FFF36F;
+}
+.summer .photo-cat1 {
+  background-image: url("/img/cat1.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.summer .photo-cat2 {
+  background-image: url("/img/cat2.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.summer .photo-flowers {
+  background-image: url("/img/flowers.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+}
+.summer .photo-kurtosh {
+  background-image: url("/img/kurtosh.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
 }
 
 .winter {
