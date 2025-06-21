@@ -1,7 +1,21 @@
 .personality-page{
+    position: relative;
     display: flex;
     @include bg-img($img:url('/img/personality-bg.jfif'));
     padding-top: 15px;
+}
+.anim-girl{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    transition: transform 2.5s ease;
+    transform: translate(0, 630px);
+    @include bg-img($img:url('/img/going-anim.gif'));
+
+}
+.arrived{
+    @include bg-img($img:url('/img/happy-anim.gif'));
+    background-size: 160px 140px;
 }
 .pers-pic-list{
     display: flex;

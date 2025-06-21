@@ -149,6 +149,7 @@
 }
 
 .personality-page {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +157,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 15px;
+}
+
+.anim-girl {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  -webkit-transition: -webkit-transform 2.5s ease;
+  transition: -webkit-transform 2.5s ease;
+  transition: transform 2.5s ease;
+  transition: transform 2.5s ease, -webkit-transform 2.5s ease;
+  -webkit-transform: translate(0, 630px);
+          transform: translate(0, 630px);
+  background-image: url("/img/going-anim.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arrived {
+  background-image: url("/img/happy-anim.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 160px 140px;
 }
 
 .pers-pic-list {
@@ -544,7 +567,7 @@
   background-image: url("/img/lyrics-bg.jfif");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 44px 0 127px;
+  padding: 30px 0 8px;
 }
 .lyrics-page .title {
   width: 900px;
@@ -557,18 +580,71 @@
   margin: 0;
 }
 
+.overflow {
+  overflow: hidden;
+  margin: 15px auto 0;
+  padding: 0;
+  width: 500px;
+}
+
 .lyrics-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   gap: 15px;
-  margin: 100px auto 0;
-  width: 1290px;
+  padding: 0;
 }
 .lyrics-list_li {
-  width: calc((100% - 30px) / 3);
+  min-width: 500px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  height: 515px;
+  border-radius: 50px;
+  background-color: rgba(43, 46, 63, 0.8);
+  padding-top: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.lyrics-list_li .audio-pic {
+  width: 360px;
+  height: 350px;
+  border-radius: 40px;
+  margin: 0 auto;
+  background-position: center;
+}
+.lyrics-list_li .night-sakura {
+  background-image: url("/img/night-sakura.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 20px 0 20px rgb(25, 26, 36), -20px 0 20px rgb(25, 26, 36);
+          box-shadow: 20px 0 20px rgb(25, 26, 36), -20px 0 20px rgb(25, 26, 36);
+}
+
+.audio-btn {
+  width: 100px;
+  height: 100px;
+  background: none;
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  position: absolute;
+  top: 450px;
+}
+
+.left-btn {
+  left: 200px;
+}
+
+.right-btn {
+  right: 200px;
 }
 
 .audio-anim {
@@ -579,11 +655,34 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 40px auto 0px;
+  width: 450px;
+  height: 70px;
+  background-color: rgba(244, 174, 193, 0.8);
+  border-radius: 50px;
+}
+
+.play, .pause {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: none;
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  left: 20px;
+}
+
+.off {
+  display: none;
 }
 
 .megaphone {
   position: relative;
   bottom: 0;
+  left: 70px;
   width: 100px;
   height: 100px;
   background-image: url(/img/megaphone.svg);
@@ -595,8 +694,27 @@
   background-image: url(/img/heart.svg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.animation {
   -webkit-animation: heartMove 1.3s infinite linear;
           animation: heartMove 1.3s infinite linear;
+}
+
+.pinky {
+  position: absolute;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-image: url("/img/calm-pinky.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pinky-on {
+  background-image: url("/img/happy-pinky.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .audio {
@@ -610,7 +728,7 @@
 
 @-webkit-keyframes heartMove {
   0% {
-    left: -40px;
+    left: 30px;
     width: 50px;
     height: 50px;
   }
@@ -627,7 +745,7 @@
     height: 60px;
   }
   100% {
-    left: 140px;
+    left: 200px;
     width: 50px;
     height: 50px;
   }
@@ -635,7 +753,7 @@
 
 @keyframes heartMove {
   0% {
-    left: -40px;
+    left: 30px;
     width: 50px;
     height: 50px;
   }
@@ -652,7 +770,7 @@
     height: 60px;
   }
   100% {
-    left: 140px;
+    left: 200px;
     width: 50px;
     height: 50px;
   }
