@@ -15,6 +15,7 @@ const btnFlower = document.querySelector('.btn-flower');
             <button class="paw-btn">
                 <img src="/img/paw.svg" alt="paw" width="200" height="200">
             </button>
+            <div class="anim-reaction"></div>
         </div>
     </div>`);
 let galleryEl = gallery.element();

@@ -2,6 +2,7 @@ let slider = document.querySelector('.lyrics-list');
 let audios = document.querySelectorAll('.lyrics-list_li');
 let leftBtn = document.querySelector('.left-btn');
 let rightBtn = document.querySelector('.right-btn');
+// let audio = document.querySelector('.audio');
 let currentIndex = 0;
 
 function handlerShow(){
@@ -25,19 +26,27 @@ rightBtn.addEventListener('click', ()=>{
     handlerShow();
 });
 handlerShow();
-audios.forEach(audio =>{
-    let playBtn = audio.querySelector('.play');
-    let pauseBtn = audio.querySelector('.pause');
-    let heart = audio.querySelector('.heart');
-    let pinky = audio.querySelector('.pinky');
+audios.forEach(el=>{
+    let audioText = el.querySelector('.audio-text');
+    let audio = el.querySelector('.audio');
+    let playBtn = el.querySelector('.play');
+    let pauseBtn = el.querySelector('.pause');
+    let heart = el.querySelector('.heart');
+    let pinky = el.querySelector('.pinky');
     pauseBtn.classList.add('off');
     playBtn.addEventListener('click', ()=>{
+        audio.play();
+        audioText.classList.add('playing');
+        audioText.classList.remove('paused');
         playBtn.classList.add('off');
         pauseBtn.classList.remove('off');
         heart.classList.add('animation');
         pinky.classList.add('pinky-on');
 });
 pauseBtn.addEventListener('click', ()=>{
+    audio.pause();
+    audioText.classList.add('paused');
+    // audioText.style.animationPlayState = 'paused';
     pauseBtn.classList.add('off');
     playBtn.classList.remove('off');
     heart.classList.remove('animation');
