@@ -66,7 +66,64 @@
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   right: 150px;
-  bottom: 190px;
+  bottom: 200px;
+}
+
+.rabbits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+
+.rabbit {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.rabbit-white {
+  background-image: url("/img/white-rabbit.svg");
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+}
+.rabbit-brown {
+  background-image: url("/img/brown-rabbit.svg");
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+}
+.rabbit:hover {
+  cursor: url("/img/pointer.svg"), auto;
+}
+.rabbit:hover .chat-box {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  opacity: 1;
+}
+
+.chat-box {
+  position: absolute;
+  opacity: 0;
+  width: 200px;
+  height: 140px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
+  background-image: url("/img/chat-box.png");
+  background-repeat: no-repeat;
+  background-size: 200px 135px;
+}
+.chat-box p {
+  padding: 0;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
 }
 
 .modal-welcome {
@@ -112,8 +169,37 @@
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  background-image: url("/img/heart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-animation: beating 1.5s linear infinite;
+          animation: beating 1.5s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
+@-webkit-keyframes beating {
+  0%, 50%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30%, 80% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@keyframes beating {
+  0%, 50%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30%, 80% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
 .modal-note {
   position: relative;
   width: 100vw;
@@ -194,10 +280,13 @@
 }
 .pers-pic-list_li {
   height: 270px;
+  width: 270px;
   border-radius: 20px;
-}
-.pers-pic-list_li img {
-  border-radius: inherit;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+  background-image: url("/img/pers-bg.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pers-pic-position {

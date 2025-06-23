@@ -26,10 +26,10 @@
     margin: 50px 0 50px 150px;
     &_li{
         height: 270px;
+        width: 270px;
         border-radius: 20px;
-        & img{
-            border-radius: inherit;
-        }
+        transition: background 1s ease;
+        @include bg-img($img:url('/img/pers-bg.jfif'));
     }
 }
 .pers-pic-position{

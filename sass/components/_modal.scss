@@ -30,6 +30,18 @@
     right: 0;
     bottom: 0;
     @include btn($width:400px,$height: 400px);
+    @include bg-img($img:url('/img/heart.png'));
+    background-position: center;
+    animation: beating 1.5s linear infinite;
+    transform-origin: center;
+}
+@keyframes beating {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  30%, 80% {
+    transform: scale(1.3);
+  }
 }
 
 //modal-note

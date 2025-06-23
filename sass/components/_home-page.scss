@@ -40,5 +40,53 @@
     position: absolute;
     @include btn($width:300px,$height: 300px, $background: none);
     right: 150px;
-    bottom: 190px;
+    bottom: 200px;
 }
+.rabbits{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+.rabbit{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    &-white{
+        @include bg-img($img:url('/img/white-rabbit.svg'), $size:150px 150px);
+    }
+    &-brown{
+        @include bg-img($img:url('/img/brown-rabbit.svg'),$size:150px 150px);
+    }
+        &:hover{
+            cursor: url('/img/pointer.svg'), auto;
+            .chat-box{
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+    }
+}
+.chat-box{
+    position: absolute;
+    opacity: 0;
+    width: 200px;
+    height: 140px;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    @include bg-img($img:url('/img/chat-box.png'),$size:200px 135px);
+    & p{
+        padding: 0;
+        text-align: center;
+        @include text($size:20px)
+    }
+}
+// @keyframes showing{
+//     0%{
+//         opacity: 0;
+//         transform: translateY(0);
+//     }
+//     100%{
+//         transform: translateY(-100px);
+//         opacity: 1;
+//     }
+// }
