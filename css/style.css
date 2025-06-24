@@ -116,14 +116,38 @@
   background-image: url("/img/chat-box.png");
   background-repeat: no-repeat;
   background-size: 200px 135px;
+  padding-left: 15px;
 }
 .chat-box p {
-  padding: 0;
+  padding: 10px;
   text-align: center;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+.chat-box button {
+  width: 80px;
+  height: 20px;
+  background: #F99CA6;
+  border: 2px solid #F4D4DB;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  border-radius: 25px;
   font-family: "Josefin Sans";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   color: #FFFFFF;
+}
+
+.choice {
+  margin: 90px 0 0 70px;
+  width: 100px;
+  height: 50px;
+  background-size: 150px 100px;
+  background-position: center;
 }
 
 .modal-welcome {

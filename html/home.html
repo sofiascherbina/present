@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
     <link rel="stylesheet" href="/css/style.min.css">  
 </head>
@@ -44,10 +44,15 @@
             </button>
             <div class="rabbits">
                 <div class="rabbit rabbit-white">
-                    <div class="chat-box"><p>hey, are u single?</p></div>
+                    <div class="chat-box">
+                        <p class="question">Підеш зі мною в підвал за цукерку ?</p>
+                        <button class="sure">Sure</button>
+                        <button class="no">No</button>
+                    </div>
+                    <div class="choice"></div>
                 </div>
                 <div class="rabbit rabbit-brown">
-                    <div class="chat-box"><p>aaaa, genshinaaaa</p></div>
+                    <div class="chat-box"><p>Ти, звичайно не хімічка в лосінах, але погляд від тебе не відвести</p></div>
                 </div>
             </div>
         </div>
@@ -58,6 +63,7 @@
             <button class="heart-btn"></button>
         </div>
     <script src="/js/modal.js" type="module"></script>
+    <script src="/js/rabbits.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
 </body>
 </html>

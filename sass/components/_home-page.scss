@@ -74,19 +74,22 @@
     transform: translateY(0);
     transition: transform 0.5s ease, opacity 0.5s ease;
     @include bg-img($img:url('/img/chat-box.png'),$size:200px 135px);
+    padding-left: 15px;
     & p{
-        padding: 0;
+        padding: 10px;
         text-align: center;
-        @include text($size:20px)
+        @include text($size:15px, $family:'Montserrat Alternates');
+    }
+    & button{
+        @include btn($width:80px, $height:20px, $background :$pink-bg, $border: 2px solid $soft-bg);
+        border-radius: 25px;
+        @include text($size:15px);
     }
 }
-// @keyframes showing{
-//     0%{
-//         opacity: 0;
-//         transform: translateY(0);
-//     }
-//     100%{
-//         transform: translateY(-100px);
-//         opacity: 1;
-//     }
-// }
+.choice{
+    margin: 90px 0 0 70px ;
+    width: 100px;
+    height: 50px;
+    background-size: 150px 100px;
+    background-position: center;
+}
