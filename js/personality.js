@@ -9,7 +9,10 @@ let persList = document.querySelectorAll('.pers-pic-list_li');
 let btnList = document.querySelectorAll('.pers-btn');
 let btnListParent = document.querySelector('.pers-btn-list');
 let animGirl = document.querySelector('.anim-girl');
-
+function alert(){
+     PNotify.alert({text:"Click on the pink buttons, beautiful", icon:false, delay:5000, addClass:'alert'});
+}
+alert();
 btnListParent.addEventListener('click', (event)=>{
     if(event.target.nodeName !== 'BUTTON'){
         return;

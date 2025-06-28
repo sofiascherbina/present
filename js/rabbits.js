@@ -4,11 +4,13 @@ const noBtn = document.querySelector('.no');
 const choice = document.querySelector('.choice');
 
 sureBtn.addEventListener('click', ()=>{
-    choice.style.backgroundImage = 'url("/img/sure-bg.png")';
+    choice.classList.add('sure');
 });
 noBtn.addEventListener('click', (event)=>{
         if(event.target.classList.contains('yeah')){
-        choice.style.backgroundImage = 'url("/img/sure-bg.png")';
+        choice.style.backgroundImage = 'url("/img/candy.png")';
+        choice.style.backgroundSize = '60px 35px';
+        choice.style.backgroundRepeat= 'no-repeat';
         question.textContent = "Fine then";
         noBtn.style.display = 'none';
         return

@@ -18,6 +18,44 @@
         padding: 50px 20px;
     }
 }
+.us{
+    position: absolute;
+    gap: 20px;
+    @include text($size: 15px,);
+    display: flex;
+     & .me{
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.05);
+                cursor: url('/img/pointer.svg'), auto;
+            }
+        }
+    & p{
+        margin: 0;
+    }
+    &-right{
+        top: 50px;
+        right: 0;
+        & .sabrina{
+            margin-top: 40px;
+            transition: transform 1s ease;
+            transform: translateX(300px);
+            & p{
+                margin-top: 5px;
+            }
+        }
+    }
+    &-left{
+        top: 50px;
+        left: 0;
+        text-align: center;
+        & .hachi{
+            transition: transform 1s ease;
+            transform: translateX(-300px);
+        }
+    }
+    
+}
 .options{
     display: flex;
     gap: 20px;
@@ -35,6 +73,11 @@
     @include text();
     margin: 0;
     padding: 15px 0 0;
+}
+.key-game{
+    position: absolute;
+    top: 400px;
+    left: 600px;
 }
 .notification{
     position: absolute;
@@ -92,4 +135,7 @@
     height: 50px;
     background-size: 150px 100px;
     background-position: center;
+}
+.sure{
+    @include bg-img($img:url('/img/candy.png'),$size:60px 35px);
 }

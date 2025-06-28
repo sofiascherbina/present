@@ -2,22 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>Present</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/BrightTheme.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.min.css">  
 </head>
 <body>
     <main>
         <div class="home-page">
             <div class="title">
-                <h1 class="title-text">What would my princess like to see</h1>
+                <h1 class="title-text">What would my princess like to see ?</h1>
+            </div>
+            <div class="us us-right">
+                <div class="me billie">
+                    <img src="/img/billie.png" alt="billie" width="100" height="163">
+                    <p>If I were Billie Eilish<br>(click on her)</p>
+                </div>
+                <div class="sabrina">
+                    <img src="/img/sabrina.png" alt="sabrina" width="100" height="111">
+                    <p>you would be my<br> Sabrina Carpenter</p>
+                </div>
+            </div>
+            <div class="us us-left">
+                <div class="hachi">
+                    <img src="/img/hachi.png" alt="hachi" width="150" height="150">
+                    <p>you would be<br> my Hachi</p>
+                </div>
+                <div class="me nana">
+                    <img src="/img/nana.png" alt="nana" width="150" height="150">
+                    <p>If I were Nana<br>(click on her)</p>
+                </div>
+            </div>
+            <div class="key-game">
+                <a href="./key-game.html"><button class="options-it_btn">
+                        <img src="/img/key-game.png" alt="camera" width="">
+                        <p class="options-it_text">Message-game</p>
+                    </button></a>
             </div>
             <ul class="options">
                 <li class="options-it">
@@ -38,6 +65,12 @@
                         <p class="options-it_text">You in my eyes</p>
                     </button></a>
                 </li>
+                <li class="options-it">
+                    <a href="./happiness.html"><button class="options-it_btn options-jellifish">
+                        <img src="/img/jellyfish 1.svg" alt="cake" height="190">
+                        <p class="options-it_text" style="padding: 0;">Happiness</p>
+                    </button></a>
+                </li>
             </ul>
             <button class="notification">
                 <img src="/img/notification.svg">
@@ -52,7 +85,7 @@
                     <div class="choice"></div>
                 </div>
                 <div class="rabbit rabbit-brown">
-                    <div class="chat-box"><p>Ти, звичайно не хімічка в лосінах, але погляд від тебе не відвести</p></div>
+                    <div class="chat-box"><p>Ти, канєшно, не хімічка в лосінах, але погляд від тебе не відвести</p></div>
                 </div>
             </div>
         </div>
@@ -62,8 +95,10 @@
             <h1 class="title-text">Tap on heart to see my love for you</h1>
             <button class="heart-btn"></button>
         </div>
-    <script src="/js/modal.js" type="module"></script>
+    <script src="/js/home.js" type="module"></script>
     <script src="/js/rabbits.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotifyMobile.js"></script>
 </body>
 </html>

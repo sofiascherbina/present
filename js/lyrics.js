@@ -2,16 +2,13 @@ let slider = document.querySelector('.lyrics-list');
 let audios = document.querySelectorAll('.lyrics-list_li');
 let leftBtn = document.querySelector('.left-btn');
 let rightBtn = document.querySelector('.right-btn');
-// let audio = document.querySelector('.audio');
 let currentIndex = 0;
-
+function alert(){
+     PNotify.alert({text:'Click on play and scroll, princess', icon:false, delay:5000, addClass:'alert'});
+}
+alert();
 function handlerShow(){
     let moved = -(500 + 15) * currentIndex; // ширина + gap
-    // audios.forEach((audio,index)=>{
-    //     if(index === currentIndex){
-    //         audio.style.transform = `translateX(${moved}px)`;
-    //     }
-    // })
     slider.style.transform = `translateX(${moved}px)`;
 
     rightBtn.style.display = currentIndex  === audios.length - 1 ? 'none' : 'block';

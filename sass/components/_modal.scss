@@ -50,16 +50,19 @@
     position: relative;
     width: 100vw;     // повна ширина вікна
     height: 100vh; 
-    padding-top: 50px;
+    // padding-top: 50px;
 }
 .note{
-    width: 800px;
-    height: 685px;
+    width: 900px;
+    height: 800px;
+    padding: 150px 210px;
     margin: 0 auto;
-    @include bg-img($img: url(/img/envelope.png));
+    @include bg-img($img: url(/img/envelope.png),$size:900px 800px);
     & p{
+        @include text($size: 12px,$family:'Montserrat Alternates',$color:#87494F, $weight:500);
         text-align: center;
         margin: 0;
+        width: 400px;
     }
 }
 .paw-btn{

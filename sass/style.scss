@@ -1,5 +1,5 @@
 @import './utils/vars', './utils/mixins', './components/home-page', './components/modal',  './components/personality',
-'./components/photogallery', './components/sounds';
+'./components/photogallery', './components/sounds', './components/jellyfish', './components/key-game';
 
 *{
     list-style-type: none;
@@ -33,6 +33,24 @@ button , .season-li{
 .is-open{
     display: block;
 }
-// .basicLightbox {
-//   background: transparent;
-// }
+.alert .pnotify-container{
+    right: -10px;
+    top: 10px;
+    width: 300px;
+    height: 100px;
+    padding-top: 30px;
+    background-color:rgba(254,214,215,0.6) ;
+    box-shadow: 5px 5px 10px $lyrics-pink;
+    border-radius: 20px;
+    @include bg-img($img:url('/img/castorice.png'), $size:70px 70px);
+    background-position: 95% 100%;
+    @include text($size:30px);
+    text-align: center;
+}
+.home-alert .pnotify-container{
+    padding-top: 10px;
+}
+.jelly-alert .pnotify-container{
+    background-color:rgba(74,85,104,0.7) ;
+    box-shadow: 5px 5px 10px rgb(90,107,154) ;
+}

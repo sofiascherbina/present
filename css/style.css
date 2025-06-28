@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .home-page {
   overflow: hidden;
   position: relative;
@@ -19,6 +20,61 @@
   background-position: 0px -40px;
   border-radius: 50px;
   padding: 50px 20px;
+}
+
+.us {
+  position: absolute;
+  gap: 20px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.us .me {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.us .me:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: url("/img/pointer.svg"), auto;
+}
+.us p {
+  margin: 0;
+}
+.us-right {
+  top: 50px;
+  right: 0;
+}
+.us-right .sabrina {
+  margin-top: 40px;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+.us-right .sabrina p {
+  margin-top: 5px;
+}
+.us-left {
+  top: 50px;
+  left: 0;
+  text-align: center;
+}
+.us-left .hachi {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
 }
 
 .options {
@@ -53,6 +109,12 @@
   color: #FFFFFF;
   margin: 0;
   padding: 15px 0 0;
+}
+
+.key-game {
+  position: absolute;
+  top: 400px;
+  left: 600px;
 }
 
 .notification {
@@ -150,6 +212,12 @@
   background-position: center;
 }
 
+.sure {
+  background-image: url("/img/candy.png");
+  background-repeat: no-repeat;
+  background-size: 60px 35px;
+}
+
 .modal-welcome {
   position: fixed;
   z-index: 998;
@@ -228,20 +296,25 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  padding-top: 50px;
 }
 
 .note {
-  width: 800px;
-  height: 685px;
+  width: 900px;
+  height: 800px;
+  padding: 150px 210px;
   margin: 0 auto;
   background-image: url(/img/envelope.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 900px 800px;
 }
 .note p {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 12px;
+  color: #87494F;
   text-align: center;
   margin: 0;
+  width: 400px;
 }
 
 .paw-btn {
@@ -1147,7 +1220,7 @@
 
 .heart {
   position: relative;
-  background-image: url(/img/heart.svg);
+  background-image: url(/img/heart.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1231,6 +1304,559 @@
     height: 50px;
   }
 }
+.jellyfish-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/img/Méduses.gif");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/Méduses.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0 51px 0;
+}
+.jellyfish-page .title {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 50px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.title-container {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  width: 1000px;
+  height: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(93, 105, 127, 0.4)), to(rgba(0, 0, 0, 0.8))), url("/img/jelly-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(93, 105, 127, 0.4), rgba(0, 0, 0, 0.8)), url("/img/jelly-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.content {
+  position: relative;
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  padding-top: 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(93, 105, 127, 0.7);
+}
+
+.shell {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+  top: 0;
+  left: 0px;
+  width: 1200px;
+  height: 700px;
+  background-image: url("/img/shell.png");
+  background-repeat: no-repeat;
+  background-size: 954px 954px;
+  background-position: center;
+}
+.shell-text {
+  font-family: "Irish Grover";
+  font-weight: 400;
+  font-size: 64px;
+  color: #FFFFFF;
+  color: #5A6B9A;
+  text-align: center;
+  margin: 310px 0 0 100px;
+  text-shadow: 4px 4px 4px #FFFFFF;
+}
+
+.visible .shell {
+  opacity: 1;
+  z-index: 999;
+}
+.visible .jelly-animation {
+  opacity: 0;
+  z-index: 997;
+}
+.visible .jelly-animation .angel-container {
+  z-index: 998;
+}
+.visible .title-container {
+  opacity: 0;
+}
+.visible .text-list {
+  opacity: 0;
+}
+
+.jelly-animation {
+  position: absolute;
+  z-index: 998;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  bottom: 50px;
+}
+
+.gate {
+  width: 200px;
+  height: 200px;
+  background: none;
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  background-image: url("/img/gate.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 1000px;
+}
+
+.angel-container {
+  position: absolute;
+  z-index: 999;
+  -webkit-transition: -webkit-transform 2.5s linear;
+  transition: -webkit-transform 2.5s linear;
+  transition: transform 2.5s linear;
+  transition: transform 2.5s linear, -webkit-transform 2.5s linear;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.angel {
+  background-image: url("/img/angel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  -webkit-transition: -webkit-transform 0.1s steps(1);
+  transition: -webkit-transform 0.1s steps(1);
+  transition: transform 0.1s steps(1);
+  transition: transform 0.1s steps(1), -webkit-transform 0.1s steps(1);
+  opacity: 1;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.moving {
+  -webkit-animation: moving-angel 2.5s 0.2s ease-out;
+          animation: moving-angel 2.5s 0.2s ease-out;
+}
+
+.text-list {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  position: relative;
+  top: 10px;
+  left: 170px;
+  z-index: 1000;
+  overflow: hidden;
+  width: 800px;
+  height: 300px;
+}
+.text-list_li {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 30px;
+  color: #FFFFFF;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.shownText {
+  opacity: 1;
+}
+
+@-webkit-keyframes moving-angel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: translateX(950px);
+            transform: translateX(950px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(950px);
+            transform: translateX(950px);
+  }
+}
+
+@keyframes moving-angel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: translateX(950px);
+            transform: translateX(950px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(950px);
+            transform: translateX(950px);
+  }
+}
+.jelly-btn {
+  position: absolute;
+  border: none;
+  width: 200px;
+  height: 200px;
+  background: none;
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.jelly-btn:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.jelly-btn .effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.jelly-btn .burst {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-animation: burst-fly 0.8s ease-out forwards;
+          animation: burst-fly 0.8s ease-out forwards;
+}
+
+/* Теми кнопок */
+.jelly-btn[data-theme=chudik] {
+  background-image: url("/img/jelly1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 20px;
+  top: 350px;
+}
+
+.jelly-btn[data-theme=star] {
+  background-image: url("/img/jelly2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 130px;
+  top: 50px;
+}
+
+.jelly-btn[data-theme=heart] {
+  background-image: url("/img/jelly3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 110px;
+  right: 10px;
+}
+
+@-webkit-keyframes burst-fly {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(var(--x), var(--y)) scale(0.5);
+            transform: translate(var(--x), var(--y)) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes burst-fly {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(var(--x), var(--y)) scale(0.5);
+            transform: translate(var(--x), var(--y)) scale(0.5);
+    opacity: 0;
+  }
+}
+.key-game-page {
+  position: relative;
+  overflow: hidden;
+  background-image: url("/img/key-game-bg.jfif");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  padding: 30px 0 167px;
+}
+.key-game-page .title {
+  width: 900px;
+  margin: 0 auto;
+  padding: 5px 0;
+  border-radius: 50px;
+  background-color: rgba(228, 118, 130, 0.6);
+}
+
+.round-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  margin: 50px 0 0 150px;
+}
+.round-list_btn {
+  padding-top: 50px;
+  width: 417px;
+  height: 269px;
+  background: none;
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  background-image: url("/img/cloud.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 128px;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 10px 10px 10px #E47682;
+  margin: 0;
+}
+
+.ghost {
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  bottom: 0;
+  left: 20px;
+  width: 152px;
+  height: 140px;
+  background-image: url("/img/ghost.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.key-round-page {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/img/key-game-bg.jfif");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  padding: 30px 0 167px;
+}
+
+.open {
+  display: block;
+}
+
+.explanation {
+  margin: auto;
+  width: 900px;
+  height: 700px;
+  border-radius: 50px;
+  padding: 15px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 70px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: rgba(228, 118, 130, 0.8);
+}
+.explanation .play-btn {
+  width: 405px;
+  height: 68px;
+  background: url("/img/play.png");
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  border-radius: 20px;
+  background-position: center;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 70px;
+  color: #FFFFFF;
+}
+.explanation button {
+  margin-top: 50px;
+}
+
+.missed {
+  margin: 50px auto;
+  width: 1231px;
+  height: 500px;
+  border-radius: 50px;
+  padding: 15px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 96px;
+  color: #FFFFFF;
+  text-shadow: 10px 4px 10px #5A6B9A;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/citlaliGif.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/citlaliGif.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.finished {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/castpriceGif.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/castpriceGif.gif");
+  margin: 50px auto;
+  width: 1231px;
+  height: 500px;
+  border-radius: 50px;
+  padding: 15px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 96px;
+  color: #FFFFFF;
+  text-shadow: 10px 4px 10px #5A6B9A;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.finished p {
+  margin-bottom: 0;
+}
+.finished .exit-btn {
+  margin-top: 200px;
+}
+
+.try-again {
+  margin-top: 100px;
+  width: 405px;
+  height: 68px;
+  background: rgba(228, 118, 130, 0.7);
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 48px;
+  color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.exit-btn {
+  border-radius: 20px;
+  width: 405px;
+  height: 68px;
+  background: url("/img/exit.png");
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  background-position: center;
+}
+
+.cloud {
+  position: absolute;
+  z-index: 999;
+  top: -10px;
+  left: 600px;
+  width: 600px;
+  height: 387px;
+  background-image: url("/img/cloud.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.movind-key {
+  position: absolute;
+  left: 850px;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.movind-key_txt {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 150px;
+  color: #FFFFFF;
+  text-shadow: 10px 10px 10px #E47682;
+}
+
+.falling {
+  -webkit-animation: movingTxt 2s linear infinite;
+          animation: movingTxt 2s linear infinite;
+}
+
+@-webkit-keyframes movingTxt {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes movingTxt {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
 * {
   list-style-type: none;
   text-decoration: none;
@@ -1277,4 +1903,35 @@ button:hover, .season-li:hover {
 
 .is-open {
   display: block;
+}
+
+.alert .pnotify-container {
+  right: -10px;
+  top: 10px;
+  width: 300px;
+  height: 100px;
+  padding-top: 30px;
+  background-color: rgba(254, 214, 215, 0.6);
+  -webkit-box-shadow: 5px 5px 10px #F4AEC1;
+          box-shadow: 5px 5px 10px #F4AEC1;
+  border-radius: 20px;
+  background-image: url("/img/castorice.png");
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: 95% 100%;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.home-alert .pnotify-container {
+  padding-top: 10px;
+}
+
+.jelly-alert .pnotify-container {
+  background-color: rgba(74, 85, 104, 0.7);
+  -webkit-box-shadow: 5px 5px 10px rgb(90, 107, 154);
+          box-shadow: 5px 5px 10px rgb(90, 107, 154);
 }/*# sourceMappingURL=style.css.map */

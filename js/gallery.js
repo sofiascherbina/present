@@ -3,6 +3,10 @@ const btnSnowflake = document.querySelector('.btn-snowflake');
 const btnMushroom = document.querySelector('.btn-mushroom');
 const btnFlower = document.querySelector('.btn-flower');
 
+function alert(){
+     PNotify.alert({text:'Click on the seasons and wait, love', icon: false, delay:5000, addClass:'alert'});
+}
+alert();
  let gallery = basicLightbox.create(`<div class="gallery-slide">
         <div class="gallery-slide-container">
             <div class="theme-photo"></div>

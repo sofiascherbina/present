@@ -1,0 +1,157 @@
+.key-game-page{
+    position: relative;
+    overflow: hidden;
+    @include bg-img($img:url('/img/key-game-bg.jfif'), $size:100vw 100vh);
+    padding: 30px 0 167px;
+    & .title{
+    width: 900px;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-radius: 50px;
+    background-color:rgba($color:$dark-pink, $alpha: 0.6);
+}
+}
+.round-list{
+    display: flex;
+    gap: 50px;
+    margin: 50px 0 0 150px;
+    &_btn{
+        padding-top: 50px;
+        @include btn($width:417px, $height:269px);
+        @include bg-img($img:url('/img/cloud.png'));
+        @include text($size:128px);
+        text-align: center;
+        text-shadow: 10px 10px 10px $dark-pink;
+        margin: 0;
+    }
+}
+.ghost{
+    position: absolute;
+    transition: transform 1s linear;
+    transform: translate(0);
+    bottom: 0;
+    left: 20px;
+    width: 152px;
+    height: 140px;
+    @include bg-img($img:url('/img/ghost.png'));
+}
+
+//rounds
+.key-round-page{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    @include bg-img($img:url('/img/key-game-bg.jfif'), $size:100vw 100vh);
+    padding: 30px 0 167px;
+}
+.open{
+    display: block;
+}
+.explanation{
+    margin: auto;
+    width: 900px;
+    height: 700px;
+    border-radius: 50px;
+    padding: 15px;
+    @include text($family:"Josefin Sans",  $size: 70px);
+    text-align: center;
+    background-color: rgba($color: $dark-pink, $alpha: 0.8);
+  & .play-btn{
+    @include btn($width:405px, $height:68px, $background : url('/img/play.png'));
+    border-radius: 20px;
+    background-position: center; @include text($family:"Josefin Sans",  $size: 70px);
+  }
+  & button{
+    margin-top: 50px;
+  }
+}
+.missed{
+    margin: 50px auto;
+    width: 1231px;
+    height: 500px;
+    border-radius: 50px;
+    padding: 15px;
+    @include text($family:"Josefin Sans",  $size: 96px);
+    text-shadow: 10px 4px 10px #5A6B9A;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('/img/citlaliGif.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.finished{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('/img/castpriceGif.gif');
+    margin: 50px auto;
+    width: 1231px;
+    height: 500px;
+    border-radius: 50px;
+    padding: 15px;
+    @include text($family:"Josefin Sans",  $size: 96px);
+    text-shadow: 10px 4px 10px #5A6B9A;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    & p {
+      margin-bottom: 0;
+    }
+    & .exit-btn{
+        margin-top: 200px;
+    }
+}
+.try-again{
+  margin-top: 100px;
+  @include btn($width:405px, $height:68px, $background: rgba($color: $dark-pink, $alpha: 0.7));
+   @include text($family:"Josefin Sans",  $size: 48px);
+   border-radius: 20px;
+}
+.exit-btn{
+    border-radius: 20px;
+    @include btn($width:405px, $height:68px, $background : url('/img/exit.png'));
+    background-position: center;
+}
+.cloud{
+    position: absolute;
+    z-index: 999;
+    top: -10px;
+    left: 600px;
+    width: 600px;
+    height: 387px;
+    @include bg-img($img:url('/img/cloud.png'));
+}
+.movind-key{
+    position: absolute;
+    left: 850px;
+    opacity: 0;
+    transform: translateY(-100%);
+    &_txt{
+        @include text($family:"Josefin Sans",  $size: 150px);
+        text-shadow: 10px 10px 10px $dark-pink;
+    }
+}
+.falling{
+    animation: movingTxt 2s linear infinite;
+}
+@keyframes movingTxt {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+}
