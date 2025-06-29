@@ -1863,7 +1863,7 @@
 }
 
 body {
-  cursor: url("/img/cursor.svg"), auto;
+  cursor: url("../img/cursor.svg"), auto;
 }
 
 button:hover, .season-li:hover {
