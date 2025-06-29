@@ -146,12 +146,12 @@
   height: 150px;
 }
 .rabbit-white {
-  background-image: url("../img/white-rabbit.svg");
+  background-image: url("./img/white-rabbit.svg");
   background-repeat: no-repeat;
   background-size: 150px 150px;
 }
 .rabbit-brown {
-  background-image: url("../img/brown-rabbit.svg");
+  background-image: url("./img/brown-rabbit.svg");
   background-repeat: no-repeat;
   background-size: 150px 150px;
 }
@@ -175,7 +175,7 @@
   transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
-  background-image: url("../img/chat-box.png");
+  background-image: url("./img/chat-box.png");
   background-repeat: no-repeat;
   background-size: 200px 135px;
   padding-left: 15px;
