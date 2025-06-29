@@ -2,7 +2,7 @@
     overflow: hidden;
     position: relative;
     padding: 30px 0 ;
-   @include bg-img($img:url('/img/home.png'));
+   @include bg-img($img:url('./img/home.png'));
     background-position: 0px -40px;
     & .title-text{
         margin: 0 auto;
@@ -12,7 +12,7 @@
         height: 260px;
         margin: 0 auto;
         background: linear-gradient(rgba(244, 212, 219, 0.5), rgba(244, 212, 219, 0.5)),
-            url('/img/hometitle-bg.gif') center/cover no-repeat;
+            url('./img/hometitle-bg.gif') center/cover no-repeat;
         background-position: 0px -40px;
         border-radius: 50px;
         padding: 50px 20px;
@@ -27,7 +27,7 @@
             transition: transform 0.3s ease;
             &:hover{
                 transform: scale(1.05);
-                cursor: url('/img/pointer.svg'), auto;
+                cursor: url('./img/pointer.svg'), auto;
             }
         }
     & p{
@@ -96,13 +96,13 @@
     width: 150px;
     height: 150px;
     &-white{
-        @include bg-img($img:url('/img/white-rabbit.svg'), $size:150px 150px);
+        @include bg-img($img:url('./img/white-rabbit.svg'), $size:150px 150px);
     }
     &-brown{
-        @include bg-img($img:url('/img/brown-rabbit.svg'),$size:150px 150px);
+        @include bg-img($img:url('./img/brown-rabbit.svg'),$size:150px 150px);
     }
         &:hover{
-            cursor: url('/img/pointer.svg'), auto;
+            cursor: url('./img/pointer.svg'), auto;
             .chat-box{
                 transform: translateY(-100px);
                 opacity: 1;
@@ -116,7 +116,7 @@
     height: 140px;
     transform: translateY(0);
     transition: transform 0.5s ease, opacity 0.5s ease;
-    @include bg-img($img:url('/img/chat-box.png'),$size:200px 135px);
+    @include bg-img($img:url('./img/chat-box.png'),$size:200px 135px);
     padding-left: 15px;
     & p{
         padding: 10px;
@@ -137,5 +137,5 @@
     background-position: center;
 }
 .sure{
-    @include bg-img($img:url('/img/candy.png'),$size:60px 35px);
+    @include bg-img($img:url('./img/candy.png'),$size:60px 35px);
 }

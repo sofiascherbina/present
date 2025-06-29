@@ -3,7 +3,7 @@
   overflow: hidden;
   position: relative;
   padding: 30px 0;
-  background-image: url("/img/home.png");
+  background-image: url("./img/home.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -40px;
@@ -15,8 +15,8 @@
   width: 800px;
   height: 260px;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 212, 219, 0.5)), to(rgba(244, 212, 219, 0.5))), url("/img/hometitle-bg.gif") center/cover no-repeat;
-  background: linear-gradient(rgba(244, 212, 219, 0.5), rgba(244, 212, 219, 0.5)), url("/img/hometitle-bg.gif") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 212, 219, 0.5)), to(rgba(244, 212, 219, 0.5))), url("./img/hometitle-bg.gif") center/cover no-repeat;
+  background: linear-gradient(rgba(244, 212, 219, 0.5), rgba(244, 212, 219, 0.5)), url("./img/hometitle-bg.gif") center/cover no-repeat;
   background-position: 0px -40px;
   border-radius: 50px;
   padding: 50px 20px;
@@ -42,7 +42,7 @@
 .us .me:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  cursor: url("/img/pointer.svg"), auto;
+  cursor: url("./img/pointer.svg"), auto;
 }
 .us p {
   margin: 0;
@@ -146,17 +146,17 @@
   height: 150px;
 }
 .rabbit-white {
-  background-image: url("/img/white-rabbit.svg");
+  background-image: url("./img/white-rabbit.svg");
   background-repeat: no-repeat;
   background-size: 150px 150px;
 }
 .rabbit-brown {
-  background-image: url("/img/brown-rabbit.svg");
+  background-image: url("./img/brown-rabbit.svg");
   background-repeat: no-repeat;
   background-size: 150px 150px;
 }
 .rabbit:hover {
-  cursor: url("/img/pointer.svg"), auto;
+  cursor: url("./img/pointer.svg"), auto;
 }
 .rabbit:hover .chat-box {
   -webkit-transform: translateY(-100px);
@@ -175,7 +175,7 @@
   transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
-  background-image: url("/img/chat-box.png");
+  background-image: url("./img/chat-box.png");
   background-repeat: no-repeat;
   background-size: 200px 135px;
   padding-left: 15px;
@@ -213,7 +213,7 @@
 }
 
 .sure {
-  background-image: url("/img/candy.png");
+  background-image: url("./img/candy.png");
   background-repeat: no-repeat;
   background-size: 60px 35px;
 }
@@ -1863,13 +1863,13 @@
 }
 
 body {
-  cursor: url("/img/cursor.svg"), auto;
+  cursor: url("./img/cursor.svg"), auto;
 }
 
 button:hover, .season-li:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  cursor: url("/img/pointer.svg"), auto;
+  cursor: url("./img/pointer.svg"), auto;
 }
 
 .container {
@@ -1915,7 +1915,7 @@ button:hover, .season-li:hover {
   -webkit-box-shadow: 5px 5px 10px #F4AEC1;
           box-shadow: 5px 5px 10px #F4AEC1;
   border-radius: 20px;
-  background-image: url("/img/castorice.png");
+  background-image: url("./img/castorice.png");
   background-repeat: no-repeat;
   background-size: 70px 70px;
   background-position: 95% 100%;
