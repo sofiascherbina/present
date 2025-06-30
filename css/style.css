@@ -1863,13 +1863,13 @@
 }
 
 body {
-  cursor: url("./img/cursor.svg"), auto;
+  cursor: url("../img/cursor.svg"), auto;
 }
 
 button:hover, .season-li:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  cursor: url("./img/pointer.svg"), auto;
+  cursor: url("../img/pointer.svg"), auto;
 }
 
 .container {
@@ -1915,7 +1915,7 @@ button:hover, .season-li:hover {
   -webkit-box-shadow: 5px 5px 10px #F4AEC1;
           box-shadow: 5px 5px 10px #F4AEC1;
   border-radius: 20px;
-  background-image: url("./img/castorice.png");
+  background-image: url("../img/castorice.png");
   background-repeat: no-repeat;
   background-size: 70px 70px;
   background-position: 95% 100%;
