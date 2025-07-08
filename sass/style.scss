@@ -6,12 +6,12 @@
     text-decoration: none;
 }
 body{
-    cursor: url('../img/cursor.svg'), auto;
+    cursor: url('img/cursor.svg'), auto;
 }
 button , .season-li{
     &:hover{
         transform: scale(1.05);
-        cursor: url('../img/pointer.svg'), auto;
+        cursor: url('img/pointer.svg'), auto;
     };
 }
 .container{
@@ -42,7 +42,7 @@ button , .season-li{
     background-color:rgba(254,214,215,0.6) ;
     box-shadow: 5px 5px 10px $lyrics-pink;
     border-radius: 20px;
-    @include bg-img($img:url('../img/castorice.png'), $size:70px 70px);
+    @include bg-img($img:url('img/castorice.png'), $size:70px 70px);
     background-position: 95% 100%;
     @include text($size:30px);
     text-align: center;

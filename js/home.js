@@ -29,7 +29,7 @@ btnOpen.addEventListener('click', ()=>{
         Скоро ми закінчимо школу і навряд чи зможемо бачитись так часто, як зараз, тому я хочу проводити з тобою більше часу, робити для тебе багато 
         багато всього,<br> поки можу.<br>
         Я сподіваюсь подарунок тобі сподобається, люблю тебе</p>
-        </div><button class="paw-btn"><img src="./img/paw.svg" alt="paw" width="200" height="200"></button></div>`)
+        </div><button class="paw-btn"><img src="img/paw.svg" alt="paw" width="200" height="200"></button></div>`)
     modalNote.show();
     let modalWin = modalNote.element(); 
 
