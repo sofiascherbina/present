@@ -2,7 +2,7 @@
     overflow: hidden;
     position: relative;
     padding: 30px 0 ;
-   @include bg-img($img:url('img/home.png'));
+   @include bg-img($img:url('./img/home.png'));
     background-position: 0px -40px;
     & .title-text{
         margin: 0 auto;
