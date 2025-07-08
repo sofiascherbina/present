@@ -1,9 +1,9 @@
 const pictures=[
-    {id:'hutao', url:'/img/hutao.jfif'},
-    {id:'xieLian', url:'/img/xieLian.jfif'},
-    {id:'narumi', url:'/img/narumi.jfif'},
-    {id:'lucy', url:'/img/lucy.jfif'},
-    {id:'ruby', url:'/img/ruby.jfif'},
+    {id:'hutao', url:'img/hutao.jfif'},
+    {id:'xieLian', url:'img/xieLian.jfif'},
+    {id:'narumi', url:'img/narumi.jfif'},
+    {id:'lucy', url:'img/lucy.jfif'},
+    {id:'ruby', url:'img/ruby.jfif'},
 ];
 let persList = document.querySelectorAll('.pers-pic-list_li');
 let btnList = document.querySelectorAll('.pers-btn');
@@ -30,7 +30,7 @@ btnListParent.addEventListener('click', (event)=>{
            }
            else{
                pic.classList.remove('chosen');
-               pic.style.backgroundImage = `url('/img/pers-bg.jfif')`;
+               pic.style.backgroundImage = `url('img/pers-bg.jfif')`;
            } 
 
     });

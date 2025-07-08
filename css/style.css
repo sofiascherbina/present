@@ -336,7 +336,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("/img/personality-bg.jfif");
+  background-image: url("img/personality-bg.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 15px;
@@ -352,13 +352,13 @@
   transition: transform 2.5s ease, -webkit-transform 2.5s ease;
   -webkit-transform: translate(0, 630px);
           transform: translate(0, 630px);
-  background-image: url("/img/going-anim.gif");
+  background-image: url("img/going-anim.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .arrived {
-  background-image: url("/img/happy-anim.gif");
+  background-image: url("img/happy-anim.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 160px 140px;
@@ -381,7 +381,7 @@
   border-radius: 20px;
   -webkit-transition: background 1s ease;
   transition: background 1s ease;
-  background-image: url("/img/pers-bg.jfif");
+  background-image: url("img/pers-bg.jfif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -419,7 +419,7 @@
   display: block;
   width: 95px;
   height: 95px;
-  background-image: url("/img/strawberry.svg");
+  background-image: url("img/strawberry.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -438,7 +438,7 @@
 }
 
 .gallery-page {
-  background-image: url("/img/gallery-bg.jfif");
+  background-image: url("img/gallery-bg.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 44px 0 149px;
@@ -524,28 +524,28 @@
 }
 
 .btn-sun {
-  background-image: url("/img/sun.svg");
+  background-image: url("img/sun.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .btn-snowflake {
-  background-image: url("/img/snowflake.svg");
+  background-image: url("img/snowflake.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .btn-mushroom {
-  background-image: url("/img/mushroom.svg");
+  background-image: url("img/mushroom.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .btn-flower {
-  background-image: url("/img/flower.svg");
+  background-image: url("img/flower.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: left;
@@ -622,7 +622,7 @@
 }
 .summer .gallery-slide-container .theme-photo {
   border: 10px solid #FFF36F;
-  background-image: url("/img/dandelion.jpg");
+  background-image: url("img/dandelion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -635,22 +635,22 @@
           animation: summer-reaction 5s steps(1) infinite, showing 5s linear infinite;
 }
 .summer .photo-cat1 {
-  background-image: url("/img/cat1.png");
+  background-image: url("img/cat1.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .summer .photo-cat2 {
-  background-image: url("/img/cat2.png");
+  background-image: url("img/cat2.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .summer .photo-flowers {
-  background-image: url("/img/flowers.png");
+  background-image: url("img/flowers.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .summer .photo-kurtosh {
-  background-image: url("/img/kurtosh.png");
+  background-image: url("img/kurtosh.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
@@ -660,7 +660,7 @@
 }
 .winter .gallery-slide-container .theme-photo {
   border: 10px solid #67DBFD;
-  background-image: url("/img/cooking.png");
+  background-image: url("img/cooking.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -672,22 +672,22 @@
           animation: winter-reaction 5s steps(1) infinite, showing 5s linear infinite;
 }
 .winter .photo-inShelter {
-  background-image: url("/img/inShelter.png");
+  background-image: url("img/inShelter.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .winter .photo-cinema {
-  background-image: url("/img/cinema.png");
+  background-image: url("img/cinema.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .winter .photo-boots {
-  background-image: url("/img/boots.png");
+  background-image: url("img/boots.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .winter .photo-shopping {
-  background-image: url("/img/shopping.png");
+  background-image: url("img/shopping.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
@@ -697,7 +697,7 @@
 }
 .spring .gallery-slide-container .theme-photo {
   border: 10px solid #E47682;
-  background-image: url("/img/bthCafe.png");
+  background-image: url("img/bthCafe.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -709,22 +709,22 @@
           animation: spring-reaction 5s steps(1) infinite, showing 5s linear infinite;
 }
 .spring .photo-bouquet {
-  background-image: url("/img/bouquet.png");
+  background-image: url("img/bouquet.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .spring .photo-lock {
-  background-image: url("/img/lock.png");
+  background-image: url("img/lock.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .spring .photo-flower1 {
-  background-image: url("/img/flower1.png");
+  background-image: url("img/flower1.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .spring .photo-flower2 {
-  background-image: url("/img/flower2.png");
+  background-image: url("img/flower2.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
@@ -734,7 +734,7 @@
 }
 .autumn .gallery-slide-container .theme-photo {
   border: 10px solid #E02D40;
-  background-image: url("/img/genshin.png");
+  background-image: url("img/genshin.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -746,22 +746,22 @@
           animation: autumn-reaction 5s steps(1) infinite, showing 5s linear infinite;
 }
 .autumn .photo-pikmi {
-  background-image: url("/img/pikmi.png");
+  background-image: url("img/pikmi.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .autumn .photo-krasotka {
-  background-image: url("/img/krasotka.png");
+  background-image: url("img/krasotka.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .autumn .photo-fontain {
-  background-image: url("/img/fontain.png");
+  background-image: url("img/fontain.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
 .autumn .photo-genTogether {
-  background-image: url("/img/genTogether.png");
+  background-image: url("img/genTogether.png");
   background-size: 250px 250px;
   background-repeat: no-repeat;
 }
@@ -811,202 +811,202 @@
 }
 @-webkit-keyframes summer-reaction {
   0% {
-    background-image: url("/img/keqing1.png");
+    background-image: url("img/keqing1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   35% {
-    background-image: url("/img/keqing2.png");
+    background-image: url("img/keqing2.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   50% {
-    background-image: url("/img/keqing3.png");
+    background-image: url("img/keqing3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   70% {
-    background-image: url("/img/keqing4.png");
+    background-image: url("img/keqing4.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   100% {
-    background-image: url("/img/keqing1.png");
+    background-image: url("img/keqing1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @keyframes summer-reaction {
   0% {
-    background-image: url("/img/keqing1.png");
+    background-image: url("img/keqing1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   35% {
-    background-image: url("/img/keqing2.png");
+    background-image: url("img/keqing2.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   50% {
-    background-image: url("/img/keqing3.png");
+    background-image: url("img/keqing3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   70% {
-    background-image: url("/img/keqing4.png");
+    background-image: url("img/keqing4.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   100% {
-    background-image: url("/img/keqing1.png");
+    background-image: url("img/keqing1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @-webkit-keyframes winter-reaction {
   0% {
-    background-image: url("/img/citlali1.png");
+    background-image: url("img/citlali1.png");
     background-repeat: no-repeat;
     background-size: 250px 260px;
   }
   45% {
-    background-image: url("/img/citlali2.png");
+    background-image: url("img/citlali2.png");
     background-repeat: no-repeat;
     background-size: 250px 260px;
   }
   75% {
-    background-image: url("/img/citlali3.png");
+    background-image: url("img/citlali3.png");
     background-repeat: no-repeat;
     background-size: 250px 260px;
   }
   100% {
-    background-image: url("/img/citlali1`.png");
+    background-image: url("img/citlali1`.png");
     background-repeat: no-repeat;
     background-size: 250px 260px;
   }
 }
 @keyframes winter-reaction {
   0% {
-    background-image: url("/img/citlali1.png");
+    background-image: url("img/citlali1.png");
     background-repeat: no-repeat;
     background-size: 250px 260px;
   }
   45% {
-    background-image: url("/img/citlali2.png");
+    background-image: url("img/citlali2.png");
     background-repeat: no-repeat;
     background-size: 250px 260px;
   }
   75% {
-    background-image: url("/img/citlali3.png");
+    background-image: url("img/citlali3.png");
     background-repeat: no-repeat;
     background-size: 250px 260px;
   }
   100% {
-    background-image: url("/img/citlali1`.png");
+    background-image: url("img/citlali1`.png");
     background-repeat: no-repeat;
     background-size: 250px 260px;
   }
 }
 @-webkit-keyframes autumn-reaction {
   0% {
-    background-image: url("/img/hutao1.png");
+    background-image: url("img/hutao1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   35% {
-    background-image: url("/img/hutao2.png");
+    background-image: url("img/hutao2.png");
     background-repeat: no-repeat;
     background-size: 270px 280px;
   }
   60% {
-    background-image: url("/img/hutao3.png");
+    background-image: url("img/hutao3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   100% {
-    background-image: url("/img/hutao1.png");
+    background-image: url("img/hutao1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @keyframes autumn-reaction {
   0% {
-    background-image: url("/img/hutao1.png");
+    background-image: url("img/hutao1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   35% {
-    background-image: url("/img/hutao2.png");
+    background-image: url("img/hutao2.png");
     background-repeat: no-repeat;
     background-size: 270px 280px;
   }
   60% {
-    background-image: url("/img/hutao3.png");
+    background-image: url("img/hutao3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   100% {
-    background-image: url("/img/hutao1.png");
+    background-image: url("img/hutao1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @-webkit-keyframes spring-reaction {
   0% {
-    background-image: url("/img/kokomi1.png");
+    background-image: url("img/kokomi1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   35% {
-    background-image: url("/img/kokomi2.png");
+    background-image: url("img/kokomi2.png");
     background-repeat: no-repeat;
     background-size: 270px 280px;
   }
   50% {
-    background-image: url("/img/kokomi3.png");
+    background-image: url("img/kokomi3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   70% {
-    background-image: url("/img/kokomi4.png");
+    background-image: url("img/kokomi4.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   100% {
-    background-image: url("/img/kokomi1.png");
+    background-image: url("img/kokomi1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @keyframes spring-reaction {
   0% {
-    background-image: url("/img/kokomi1.png");
+    background-image: url("img/kokomi1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   35% {
-    background-image: url("/img/kokomi2.png");
+    background-image: url("img/kokomi2.png");
     background-repeat: no-repeat;
     background-size: 270px 280px;
   }
   50% {
-    background-image: url("/img/kokomi3.png");
+    background-image: url("img/kokomi3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   70% {
-    background-image: url("/img/kokomi4.png");
+    background-image: url("img/kokomi4.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
   100% {
-    background-image: url("/img/kokomi1.png");
+    background-image: url("img/kokomi1.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 .lyrics-page {
-  background-image: url("/img/lyrics-bg.jfif");
+  background-image: url("img/lyrics-bg.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px 0 8px;
@@ -1064,42 +1064,42 @@
   background-position: center;
 }
 .lyrics-list_li .night-sakura {
-  background-image: url("/img/night-sakura.jfif");
+  background-image: url("img/night-sakura.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: 20px 0 20px rgb(25, 26, 36), -20px 0 20px rgb(25, 26, 36);
           box-shadow: 20px 0 20px rgb(25, 26, 36), -20px 0 20px rgb(25, 26, 36);
 }
 .lyrics-list_li .dandelions {
-  background-image: url("/img/dandelions.jfif");
+  background-image: url("img/dandelions.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: 20px 0 20px rgb(34, 32, 34), -20px 0 20px rgb(34, 32, 34);
           box-shadow: 20px 0 20px rgb(34, 32, 34), -20px 0 20px rgb(34, 32, 34);
 }
 .lyrics-list_li .baby {
-  background-image: url("/img/baby.jfif");
+  background-image: url("img/baby.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: 20px 0 20px rgb(25, 44, 84), -20px 0 20px rgb(25, 44, 84);
           box-shadow: 20px 0 20px rgb(25, 44, 84), -20px 0 20px rgb(25, 44, 84);
 }
 .lyrics-list_li .lunch {
-  background-image: url("/img/lunch.jfif");
+  background-image: url("img/lunch.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: 20px 0 20px rgb(120, 116, 112), -20px 0 20px rgb(120, 116, 112);
           box-shadow: 20px 0 20px rgb(120, 116, 112), -20px 0 20px rgb(120, 116, 112);
 }
 .lyrics-list_li .ldr {
-  background-image: url("/img/ldr.jfif");
+  background-image: url("img/ldr.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: 20px 0 20px rgb(173, 142, 137), -20px 0 20px rgb(173, 142, 137);
           box-shadow: 20px 0 20px rgb(173, 142, 137), -20px 0 20px rgb(173, 142, 137);
 }
 .lyrics-list_li .eyes {
-  background-image: url("/img/eyes.jfif");
+  background-image: url("img/eyes.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: 20px 0 20px rgb(98, 100, 86), -20px 0 20px rgb(98, 100, 86);
@@ -1214,13 +1214,13 @@
   left: 70px;
   width: 100px;
   height: 100px;
-  background-image: url(/img/megaphone.svg);
+  background-image: url(img/megaphone.svg);
   background-size: cover;
 }
 
 .heart {
   position: relative;
-  background-image: url(/img/heart.png);
+  background-image: url(img/heart.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1235,13 +1235,13 @@
   right: 20px;
   width: 80px;
   height: 80px;
-  background-image: url("/img/calm-pinky.gif");
+  background-image: url("img/calm-pinky.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .pinky-on {
-  background-image: url("/img/happy-pinky.gif");
+  background-image: url("img/happy-pinky.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1305,8 +1305,8 @@
   }
 }
 .jellyfish-page {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/img/Méduses.gif");
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/Méduses.gif");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("img/Méduses.gif");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/Méduses.gif");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 30px 0 51px 0;
@@ -1325,8 +1325,8 @@
   transition: opacity 0.5s ease;
   width: 1000px;
   height: 150px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(93, 105, 127, 0.4)), to(rgba(0, 0, 0, 0.8))), url("/img/jelly-bg.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(93, 105, 127, 0.4), rgba(0, 0, 0, 0.8)), url("/img/jelly-bg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(93, 105, 127, 0.4)), to(rgba(0, 0, 0, 0.8))), url("img/jelly-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(93, 105, 127, 0.4), rgba(0, 0, 0, 0.8)), url("img/jelly-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50px;
@@ -1356,7 +1356,7 @@
   left: 0px;
   width: 1200px;
   height: 700px;
-  background-image: url("/img/shell.png");
+  background-image: url("img/shell.png");
   background-repeat: no-repeat;
   background-size: 954px 954px;
   background-position: center;
@@ -1412,7 +1412,7 @@
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  background-image: url("/img/gate.png");
+  background-image: url("img/gate.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 1000px;
@@ -1430,7 +1430,7 @@
 }
 
 .angel {
-  background-image: url("/img/angel.png");
+  background-image: url("img/angel.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 200px;
@@ -1552,7 +1552,7 @@
 
 /* Теми кнопок */
 .jelly-btn[data-theme=chudik] {
-  background-image: url("/img/jelly1.png");
+  background-image: url("img/jelly1.png");
   background-repeat: no-repeat;
   background-size: cover;
   left: 20px;
@@ -1560,7 +1560,7 @@
 }
 
 .jelly-btn[data-theme=star] {
-  background-image: url("/img/jelly2.png");
+  background-image: url("img/jelly2.png");
   background-repeat: no-repeat;
   background-size: cover;
   right: 130px;
@@ -1568,7 +1568,7 @@
 }
 
 .jelly-btn[data-theme=heart] {
-  background-image: url("/img/jelly3.png");
+  background-image: url("img/jelly3.png");
   background-repeat: no-repeat;
   background-size: cover;
   bottom: 110px;
@@ -1603,7 +1603,7 @@
 .key-game-page {
   position: relative;
   overflow: hidden;
-  background-image: url("/img/key-game-bg.jfif");
+  background-image: url("img/key-game-bg.jfif");
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   padding: 30px 0 167px;
@@ -1633,7 +1633,7 @@
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  background-image: url("/img/cloud.png");
+  background-image: url("img/cloud.png");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Josefin Sans";
@@ -1657,7 +1657,7 @@
   left: 20px;
   width: 152px;
   height: 140px;
-  background-image: url("/img/ghost.png");
+  background-image: url("img/ghost.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1671,7 +1671,7 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  background-image: url("/img/key-game-bg.jfif");
+  background-image: url("img/key-game-bg.jfif");
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   padding: 30px 0 167px;
@@ -1697,7 +1697,7 @@
 .explanation .play-btn {
   width: 405px;
   height: 68px;
-  background: url("/img/play.png");
+  background: url("img/play.png");
   border: none;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -1726,16 +1726,16 @@
   color: #FFFFFF;
   text-shadow: 10px 4px 10px #5A6B9A;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/citlaliGif.gif");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/citlaliGif.gif");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("img/citlaliGif.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/citlaliGif.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .finished {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/castpriceGif.gif");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/castpriceGif.gif");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("img/castpriceGif.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/castpriceGif.gif");
   margin: 50px auto;
   width: 1231px;
   height: 500px;
@@ -1779,7 +1779,7 @@
   border-radius: 20px;
   width: 405px;
   height: 68px;
-  background: url("/img/exit.png");
+  background: url("img/exit.png");
   border: none;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -1795,7 +1795,7 @@
   left: 600px;
   width: 600px;
   height: 387px;
-  background-image: url("/img/cloud.png");
+  background-image: url("img/cloud.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

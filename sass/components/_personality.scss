@@ -1,7 +1,7 @@
 .personality-page{
     position: relative;
     display: flex;
-    @include bg-img($img:url('/img/personality-bg.jfif'));
+    @include bg-img($img:url('img/personality-bg.jfif'));
     padding-top: 15px;
 }
 .anim-girl{
@@ -10,11 +10,11 @@
     height: 130px;
     transition: transform 2.5s ease;
     transform: translate(0, 630px);
-    @include bg-img($img:url('/img/going-anim.gif'));
+    @include bg-img($img:url('img/going-anim.gif'));
 
 }
 .arrived{
-    @include bg-img($img:url('/img/happy-anim.gif'));
+    @include bg-img($img:url('img/happy-anim.gif'));
     background-size: 160px 140px;
 }
 .pers-pic-list{
@@ -29,7 +29,7 @@
         width: 270px;
         border-radius: 20px;
         transition: background 1s ease;
-        @include bg-img($img:url('/img/pers-bg.jfif'));
+        @include bg-img($img:url('img/pers-bg.jfif'));
     }
 }
 .pers-pic-position{
@@ -52,7 +52,7 @@
         display: block;
         width: 95px;
         height: 95px;
-       @include bg-img($img:url('/img/strawberry.svg'));
+       @include bg-img($img:url('img/strawberry.svg'));
 
     }
     &:focus{

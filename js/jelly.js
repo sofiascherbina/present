@@ -37,9 +37,9 @@ const buttons = document.querySelectorAll('.jelly-btn');
 
 // Шляхи до різних маленьких картинок:
 const burstImages = {
-  chudik: '/img/chudik.png',
-  star: '/img/star.png',
-  heart: '/img/jelly-heart.png',
+  chudik: 'img/chudik.png',
+  star: 'img/star.png',
+  heart: 'img/jelly-heart.png',
 };
 
 buttons.forEach(button => {
