@@ -243,7 +243,7 @@
   height: 446px;
   margin: 70px auto 60px;
   border-radius: 56px;
-  background-image: url("/img/welcome.jpg");
+  background-image: url("./img/welcome.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -65px;
@@ -261,7 +261,7 @@
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  background-image: url("/img/heart.png");
+  background-image: url("./img/heart.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -303,7 +303,7 @@
   height: 800px;
   padding: 150px 210px;
   margin: 0 auto;
-  background-image: url(/img/envelope.png);
+  background-image: url("./img/envelope.png");
   background-repeat: no-repeat;
   background-size: 900px 800px;
 }
