@@ -15,8 +15,8 @@
   width: 800px;
   height: 260px;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 212, 219, 0.5)), to(rgba(244, 212, 219, 0.5))), url("./img/hometitle-bg.gif") center/cover no-repeat;
-  background: linear-gradient(rgba(244, 212, 219, 0.5), rgba(244, 212, 219, 0.5)), url("./img/hometitle-bg.gif") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 212, 219, 0.5)), to(rgba(244, 212, 219, 0.5))), url("../img/hometitle-bg.gif") center/cover no-repeat;
+  background: linear-gradient(rgba(244, 212, 219, 0.5), rgba(244, 212, 219, 0.5)), url("../img/hometitle-bg.gif") center/cover no-repeat;
   background-position: 0px -40px;
   border-radius: 50px;
   padding: 50px 20px;
@@ -146,12 +146,12 @@
   height: 150px;
 }
 .rabbit-white {
-  background-image: url("./img/white-rabbit.svg");
+  background-image: url("/img/white-rabbit.svg");
   background-repeat: no-repeat;
   background-size: 150px 150px;
 }
 .rabbit-brown {
-  background-image: url("./img/brown-rabbit.svg");
+  background-image: url("/img/brown-rabbit.svg");
   background-repeat: no-repeat;
   background-size: 150px 150px;
 }
