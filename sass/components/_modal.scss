@@ -22,7 +22,7 @@
     height: 446px;
     margin: 70px auto 60px;
     border-radius: 56px;
-    @include bg-img($img:url('img/welcome.jpg'));
+    @include bg-img($img:url('../img/welcome.jpg'));
     background-position: 0px -65px;
 }
 .heart-btn{
@@ -30,7 +30,7 @@
     right: 0;
     bottom: 0;
     @include btn($width:400px,$height: 400px);
-    @include bg-img($img:url('img/heart.png'));
+    @include bg-img($img:url('../img/heart.png'));
     background-position: center;
     animation: beating 1.5s linear infinite;
     transform-origin: center;
@@ -57,7 +57,7 @@
     height: 800px;
     padding: 150px 210px;
     margin: 0 auto;
-    @include bg-img($img: url('img/envelope.png'),$size:900px 800px);
+    @include bg-img($img: url('../img/envelope.png'),$size:900px 800px);
     & p{
         @include text($size: 12px,$family:'Montserrat Alternates',$color:#87494F, $weight:500);
         text-align: center;
